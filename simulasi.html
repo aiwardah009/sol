@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Antrian Pelanggan - Round Robin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simulasi Antrian Pelanggan - Round Robin</h1>
+
+        <div class="form-container">
+            <input type="text" id="customerName" placeholder="Nama Pelanggan" required>
+            <input type="number" id="serviceTime" placeholder="Waktu Layanan (detik)" required>
+            <input type="number" id="quantumTime" placeholder="Waktu Quantum (detik)" required>
+            <button onclick="addCustomer()">Tambah Pelanggan</button>
+        </div>
+
+        <table id="customerTable">
+            <tr>
+                <th>Nama Pelanggan</th>
+                <th>Waktu Layanan</th>
+            </tr>
+        </table>
+
+        <button onclick="runSimulation()">Jalankan Simulasi</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
